@@ -1,7 +1,17 @@
-/*
-background-grey: #F4F3F4;
-button-purple: #192592
-main-titles dark-grey: #2C303F;
-paragraph grey: #5b5e6d;
-nav grey: #5b5e6d;
-*/
+/* Error: Expected identifier.
+ *     ,
+ * 332 | @media{}
+ *     |       ^
+ *     '
+ *   style.scss 332:7  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected identifier.\a     \2577 \a 332 \2502  @media{}\d\a     \2502        ^\a     \2575 \a   style.scss 332:7  root stylesheet";
+}
